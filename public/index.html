@@ -8,6 +8,8 @@
 
 <!--CSS-->
 <link rel="stylesheet" href="/jquery-ui/themes/base/jquery-ui.css">
+<!--Tailwind CSS-->
+<link rel="stylesheet" href="/styles/style.css"/>
 
 <!--Javascript-->
 <script src="/jquery/jquery.min.js"></script>
@@ -46,6 +48,21 @@
         </div>
         <div id="tabs-3">
         
+          <div class="flex justify-center">
+            <div class="rounded-lg shadow-lg bg-white max-w-sm">
+              <a href="#!">
+                <img class="rounded-t-lg" src="images/profile.jpg" alt=""/>
+              </a>
+              <div class="p-6">
+                <h5 class="text-gray-900 text-xl font-medium mb-2">I'm Supakorn</h5>
+                <p class="text-gray-700 text-base mb-4">
+                  Sss.Sss
+                </p>
+                <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Good</button>
+              </div>
+            </div>
+          </div>
+
         </div>
     </div><!-- tabs-->
 
@@ -100,7 +117,7 @@
            headers: { 
              'Content-Type': 'application/json',
              "Accepts": "application/json",
-             "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90b29scy5lY3BlLm51LmFjLnRoXC9uZXR3b3JrXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU5MTUzNjU0LCJleHAiOjE2NTkxNTcyNTQsIm5iZiI6MTY1OTE1MzY1NCwianRpIjoiRmpDMXA3TUZBTVhVZkpPRyIsInN1YiI6NDksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.t_usnK3wfK-SsXS8ewA8pxEJg-2E8X6Gaa3aoSZcyX0",
+             "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90b29scy5lY3BlLm51LmFjLnRoXC9uZXR3b3JrXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU5MjU2MzE4LCJleHAiOjE2NTkyNTk5MTgsIm5iZiI6MTY1OTI1NjMxOCwianRpIjoiOWRmZm9paUJUbUdXTUc4UyIsInN1YiI6NDksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MQanbR3nqNUaWT9R5DRHvERhdyS8ltROXuxHC_7-4Dw",
            },
            success: function(data){
              console.log(data);
